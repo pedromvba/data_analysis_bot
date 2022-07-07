@@ -83,5 +83,6 @@ class TelegramBot:
         requests.get(link_to_send)
         return 
 
-#Teste
 
+# Fazendo Comentários para subir nova versão do código.
+# Nova tentativa

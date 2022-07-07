@@ -86,3 +86,5 @@ class TelegramBot:
 
 # Fazendo Comentários para subir nova versão do código.
 # Nova tentativa
+
+# Mais uma vez

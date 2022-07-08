@@ -1,4 +1,4 @@
-''' 
+'''
 1. The src (source) folder is destined for source code
  
 2. The .env is a place for you to declare environment variables so people won't see it on git, for example the bot API 

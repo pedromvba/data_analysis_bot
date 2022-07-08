@@ -28,3 +28,4 @@ class Gdrivebot:
         
         worksheet = sh.sheet1 # selecting the sheet
         return worksheet.get_all_records() # This returns a list of dictionaries, get_all_values returns a list of lists.
+# teste

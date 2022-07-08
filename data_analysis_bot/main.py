@@ -1,6 +1,14 @@
 '''File for testing the code'''
 
-from src.telegram_bot import TelegramBot
+# pylint: disable=E1101
 
-bot = TelegramBot()
-bot.start()
+from src.telegram_bot import TelegramBot
+from src.gdrivebot import Gdrivebot
+
+
+#bot = TelegramBot()
+#bot.start()
+
+gdrivebot = Gdrivebot()
+
+print(gdrivebot.get_data())

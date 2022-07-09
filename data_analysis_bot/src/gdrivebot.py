@@ -29,6 +29,5 @@ class Gdrivebot:
 # spreadsheet total link = https://docs.google.com/spreadsheets/d/1K-ft9TcGbSShUeO43h853j7CmlPBZPoTsTvDjJ4_1s4/edit#gid=0
         
         worksheet = sh.sheet1 # selecting the sheet
-        df = pd.DataFrame(worksheet.get_all_records()) 
+        df = pd.DataFrame(worksheet.get_all_records()) # https://docs.gspread.org/en/latest/user-guide.html
         return df # get all records returns a list of dictionaries, get_all_values returns a list of lists.
-# teste

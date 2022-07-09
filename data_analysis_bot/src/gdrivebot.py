@@ -2,6 +2,7 @@ from dotenv import load_dotenv
 import gspread #library for accessing gsheets
 import os
 import json
+import pandas as pd
 
 load_dotenv()       # take environment variables from .env.
                     # Code of your application, which uses environment variables (e.g. from `os.environ` or
@@ -22,10 +23,12 @@ class Gdrivebot:
 
 
     def get_data(self):
-        sh = self.gc.open_by_key('1K-ft9TcGbSShUeO43h853j7CmlPBZPoTsTvDjJ4_1s4') 
+        gsheet_link = os.getenv('SHEET_LINK')
+        sh = self.gc.open_by_key(gsheet_link) 
         
 # spreadsheet total link = https://docs.google.com/spreadsheets/d/1K-ft9TcGbSShUeO43h853j7CmlPBZPoTsTvDjJ4_1s4/edit#gid=0
         
         worksheet = sh.sheet1 # selecting the sheet
-        return worksheet.get_all_records() # This returns a list of dictionaries, get_all_values returns a list of lists.
+        df = pd.DataFrame(worksheet.get_all_records()) 
+        return df # get all records returns a list of dictionaries, get_all_values returns a list of lists.
 # teste

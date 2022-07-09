@@ -55,3 +55,12 @@ Project Organization
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+
+# Visualizations asked by the HR
+
+Monthly internal average NPS per sector;
+Monthly internal average NPS per type of contract; 
+NPS Distribution
+
+
